@@ -1,0 +1,14 @@
+{
+  "gcp": {
+    "cloud_run_service_name": "hybrid-app",
+    "gcs_bucket_name": "hybrid-gcs-bucket",
+    "db_instance_name": "hybrid-postgres-instance",
+    "db_user": "hybriduser",
+    "db_password": "Password123"
+  },
+  "localstack": {
+    "s3_bucket_name": "localstack-s3-bucket",
+    "sqs_queue_name": "localstack-sqs-queue",
+    "lambda_function_name": "localstack-lambda"
+  }
+}

@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+npm-debug.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+
+# Google credentials
+*.json
+!submission.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Zip files (if generated locally)
+*.zip
+
+# VS Code
+.vscode/
+node_modules/
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.pem
+.env
+.DS_Store
+.vscode/
+node_modules/
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+localstack-data/
+*.pem
+.env
+test.txt
+app/node_modules/
+app/package-lock.json/
