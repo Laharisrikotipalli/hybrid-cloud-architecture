@@ -14,34 +14,22 @@ The system demonstrates real-world hybrid cloud communication between GCP servic
 
 ---
 
-# Architecture Diagram
+##  Hybrid Cloud Architecture
 
-```
-                     ┌─────────────────────────┐
-                     │       Cloud Run         │
-                     │   (Node.js Service)     │
-                     └────────────┬────────────┘
-                                  │
-                                  │
-              ┌───────────────────┴────────────────────┐
-              │                                        │
-              ▼                                        ▼
-     ┌────────────────┐                       ┌────────────────┐
-     │   Cloud SQL     │                       │  GCS Bucket    │
-     │ (PostgreSQL)    │                       │                │
-     └────────────────┘                       └────────────────┘
+This project demonstrates a hybrid cloud architecture integrating Google Cloud Platform (GCP) with simulated AWS services using LocalStack.
 
-                                  │
-                                  ▼
-                        ┌─────────────────┐
-                        │  LocalStack VM  │
-                        │ (Simulated AWS) │
-                        └─────────┬───────┘
-                                  │
-                    ┌─────────────┼─────────────┐
-                    ▼             ▼             ▼
-                  S3 Bucket     SQS Queue     Lambda
-```
+![Architecture Diagram](docs/architecture.png)
+
+### Components Overview
+
+- **Cloud Run (Node.js App)** – Main application service
+- **Cloud SQL (PostgreSQL)** – Managed relational database
+- **Google Cloud Storage (GCS)** – Object storage
+- **VPC Connector** – Enables private communication
+- **Compute Engine VM (LocalStack)** – Simulates AWS environment
+- **S3 (Simulated)** – Object storage
+- **SQS (Simulated)** – Messaging queue
+- **Lambda (Simulated)** – Serverless function
 
 ---
 
